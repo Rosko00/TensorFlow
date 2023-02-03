@@ -15,5 +15,8 @@ print (5*x)
 # Vrateny rozmer tenzora, zodpoveda vstupnemu rozmeru
 # Operacia vykonava standardne beznu maticovu transformaciu na 2-d vstupnych tenzoroch
 print (x @ tf.transpose(x)) 
-
+# Funckia konvertuje vektor realnych cisel na pravdepodobnostne rozdelenie moznych vysledkov.
+# Casto sa pouziva ako posledna aktivacna funkcia neuronovej siete na normalizaciu vystupu
+# na roydelenie pravdepodobnosti v ramci predpovedanych tried
 print (tf.nn.softmax(x, axis=-1))
+
