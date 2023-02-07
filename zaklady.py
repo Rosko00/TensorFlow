@@ -19,4 +19,7 @@ print (x @ tf.transpose(x))
 # Casto sa pouziva ako posledna aktivacna funkcia neuronovej siete na normalizaciu vystupu
 # na roydelenie pravdepodobnosti v ramci predpovedanych tried
 print (tf.nn.softmax(x, axis=-1))
-
+# Funkcia sa pouziva na najdenie suctu prvkov napriec dimenziami tenzora
+print (tf.reduce_sum(x))
+#
+print (tf.convert_to_tensor([1,2,3]))
